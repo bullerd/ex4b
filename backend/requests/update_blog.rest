@@ -1,0 +1,10 @@
+//POST http://localhost:3001/api/notes
+PUT http://localhost:3003/api/blogs/694d93b6633282f41381eaa5
+Content-Type: application/json
+
+{
+    "title": "How to create a React app",
+    "author": "David Buller",
+    "url": "www.bullerfamily.net",
+    "likes": 3 
+}

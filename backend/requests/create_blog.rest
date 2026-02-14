@@ -1,0 +1,10 @@
+//POST http://localhost:3001/api/notes
+POST http://localhost:3003/api/blogs/
+Content-Type: application/json
+
+{
+    "title": "Let's create another Repo!",
+    "author": "Solo Buller",
+    "url": "www.funwithcode.com",
+    "likes": 55
+}
