@@ -61,11 +61,16 @@ blogsRouter.post("/", async (request, response, next) => {
   logger.info("adding a note");
   const body = request.body;
 
+  //reject if missing data
+  if (!body.title || !body.url) {
+    return response.status(400).json({ error: "title or url missing" });
+  }
+
   const blog = new Blog({
     title: body.title,
     author: body.author,
     url: body.url,
-    likes: body.likes,
+    likes: body.likes || 0,
   });
 
   try {

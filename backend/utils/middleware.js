@@ -20,7 +20,7 @@ const errorHandler = (error, request, response, next) => {
     return response.status(400).send({ error: "malformatted id" });
   } else if (error.name === "ValidationError") {
     const details = Object.fromEntries(
-      Object.entries(error.errors).map(([field, err]) => [field, err.message])
+      Object.entries(error.errors).map(([field, err]) => [field, err.message]),
     );
     return response.status(400).json({
       error: "validation error",

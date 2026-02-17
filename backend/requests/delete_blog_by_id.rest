@@ -1,3 +1,5 @@
 
 
-DELETE  http://localhost:3003/api/blogs/{id goes here without braces}
+//DELETE  http://localhost:3003/api/blogs/{id goes here without braces}
+
+DELETE  http://localhost:3003/api/blogs/6992539af73bf3ef2c4eeba5
